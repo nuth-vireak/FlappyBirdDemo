@@ -8,7 +8,7 @@ public class DesktopLauncher {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		config.setForegroundFPS(60);
 		config.setTitle(FlappyDemo.TITLE);
-		config.setWindowSizeLimits(FlappyDemo.WIDTH, FlappyDemo.HEIGHT, 9999, 9999);
+		config.setWindowSizeLimits(FlappyDemo.WIDTH, FlappyDemo.HEIGHT, FlappyDemo.WIDTH, FlappyDemo.HEIGHT);
 		new Lwjgl3Application(new FlappyDemo(), config);
 	}
 }

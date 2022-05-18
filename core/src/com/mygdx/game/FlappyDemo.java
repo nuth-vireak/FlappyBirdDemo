@@ -11,7 +11,7 @@ import com.mygdx.game.States.MenuState;
 
 public class FlappyDemo extends ApplicationAdapter {
 
-	public static final int WIDTH = 480;
+	public static final int WIDTH = 450;
 	public static final	int HEIGHT = 800;
 
 	public static final String TITLE = "FlappyBird";
@@ -23,7 +23,6 @@ public class FlappyDemo extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		gsm = new GameStateManager();
-		Gdx.gl.glClearColor(1, 0, 0, 1);
 		gsm.push(new MenuState(gsm));
 	}
 
